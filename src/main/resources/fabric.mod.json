@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "mc-course-mod",
+	"version": "${version}",
+	"name": "Mc Course Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Mcneds"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mc-course-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.mcneds.mccoursemod.McCourseMod"
+		],
+		"fabric-datagen": [
+			"dev.mcneds.mccoursemod.McCourseModDataGenerator"
+		],
+		"client": [
+			"dev.mcneds.mccoursemod.MCCourseModClient"
+		]
+	},
+	"mixins": [
+		"mc-course-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
